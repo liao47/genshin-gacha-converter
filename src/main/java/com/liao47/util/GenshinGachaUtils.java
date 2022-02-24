@@ -41,10 +41,10 @@ public class GenshinGachaUtils {
     /**
      * excel转json
      * @param excelPath
-     * @param jsonExportDir
+     * @param exportDir
      * @param uid
      */
-    public static void excelToJson(String excelPath, String jsonExportDir, String uid) {
+    public static void excelToJson(String excelPath, String exportDir, String uid) {
         JSONObject json = new JSONObject();
         json.put(Constants.GACHA_TYPE, GACHA_TYPES);
         json.put(Constants.UID, uid);
@@ -80,7 +80,7 @@ public class GenshinGachaUtils {
             }
         }
 
-        exportJson(json, jsonExportDir, uid);
+        exportJson(json, exportDir, uid);
     }
 
     /**
