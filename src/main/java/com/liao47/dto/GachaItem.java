@@ -20,22 +20,22 @@ public class GachaItem implements Serializable {
     @JSONField(name = "item_id")
     private String itemId;
 
-    private String count = "1";
+    private String count;
 
-    @Excel(name = "时间")
+    @Excel(name = "时间", width = 22)
     private String time;
 
-    @Excel(name = "名称")
+    @Excel(name = "名称", orderNum = "1", width = 18)
     private String name;
 
-    private String lang = "zh-cn";
+    private String lang;
 
     @JSONField(name = "item_type")
-    @Excel(name = "类别")
+    @Excel(name = "类别", orderNum = "2", width = 8)
     private String itemType;
 
     @JSONField(name = "rank_type")
-    @Excel(name = "星级")
+    @Excel(name = "星级", orderNum = "3", width = 8)
     private String rankType;
 
     private String id;
